@@ -1,7 +1,7 @@
 FROM python:3.9
 ENV PYTHONPATH "${PYTHONPATH}:/app"
 WORKDIR /app
-EXPOSE 8100
+EXPOSE 8300
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
